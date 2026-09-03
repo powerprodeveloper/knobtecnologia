@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Programa | PowerPro</title>
+    <link rel="stylesheet" href="css/produto.css">
+    <link rel="shortcut icon" href="css/imagens/icons/logoTipoLaranja.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo-header">
+                <img src="css/imagens/logoPowerPro1White.png" alt="PowerPro">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="pgProntos.html">← Voltar à galeria</a></li>
+                    <li><a href="index.html">Início</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="detalhes">
+            <div class="container-detalhes">
+                <div class="produto-imagem">
+                    <img id="produtoImg" src="" alt="Imagem do produto">
+                </div>
+                <div class="produto-info">
+                    <h1 id="produtoTitulo">Título</h1>
+                    <p id="produtoDescricao">Descrição do produto.</p>
+                    <p class="produto-preco" id="produtoPreco">R$ 0,00</p>
+                    <a id="btnComprar" href="#" target="_blank" class="btn-comprar">Comprar via WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const produtos = {
+            1: {
+                titulo: "Finanças",
+                descricao: "Sistema completo para gerenciar finanças pessoais ou empresariais. Inclui cadastro de clientes, itens, impressão de orçamentos e histórico.",
+                preco: "R$ 29,90",
+                img: "css/imagens/programas/financas.png",
+                whatsapp: "5515981458518"
+            },
+            2: {
+                titulo: "Vendas",
+                descricao: "Gerencie suas vendas de forma eficiente. Controle de estoque, emissão de notas fiscais, relatórios detalhados e muito mais.",
+                preco: "R$ 89,90",
+                img: "css/imagens/programas/vendas.png",
+                whatsapp: "5515981458518"
+            },
+            3: {
+                titulo: "Juros Compostos",
+                descricao: "Calcule juros compostos de forma rápida e prática. Ideal para investimentos, financiamentos e planejamento financeiro.",
+                preco: "R$ 15,50",
+                img: "css/imagens/programas/jurus.png",
+                whatsapp: "5515981458518"
+            },
+            4: {
+                titulo: "Apresentação de Slids",
+                descricao: "Crie apresentações de slides de forma simples e intuitiva. Personalize com textos, imagens e efeitos visuais para impactar sua audiência.",
+                preco: "R$ 50,00",
+                img: "css/imagens/programas/slids.png",
+                whatsapp: "5515981458518"
+            },
+            5: {
+                titulo: "Médicos",
+                descricao: "Sistema para clínicas e consultórios médicos. Gerencie pacientes, agendamentos, prontuários e relatórios de forma eficiente.",
+                preco: "R$ 579,90",
+                img: "css/imagens/programas/medicos.png",
+                whatsapp: "5515981458518"
+            },
+            6: {
+                titulo: "Cooperativas",
+                descricao: "Sistema especializado para gerenciar cooperativas. Controle de membros, reuniões, financeiro e muito mais.",
+                preco: "R$ 199,90",
+                img: "css/imagens/programas/cooper.png",
+                whatsapp: "5515981458518"
+            }
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
+
+        if (id && produtos[id]) {
+            const p = produtos[id];
+            document.getElementById('produtoTitulo').textContent = p.titulo;
+            document.getElementById('produtoDescricao').textContent = p.descricao;
+            document.getElementById('produtoPreco').textContent = p.preco;
+            document.getElementById('produtoImg').src = p.img;
+            document.getElementById('btnComprar').href = `https://wa.me/${p.whatsapp}?text=Olá! Gostaria de comprar o programa "${p.titulo}" por ${p.preco}.`;
+        } else {
+            document.querySelector('.container-detalhes').innerHTML = `
+                <div style="text-align:center;padding:4rem 2rem;">
+                    <h2 style="font-size:1.6rem;">Produto não encontrado</h2>
+                    <a href="pgProntos.html" style="color:#D88345;font-weight:600;margin-top:1rem;display:inline-block;">Voltar à galeria</a>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

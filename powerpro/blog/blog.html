@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog PowerPro | Dicas e novidades</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="shortcut icon" href="../css/imagens/icons/logoTipoLaranja.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo-header">
+                <img src="../css/imagens/logoPowerPro2L.png" alt="PowerPro">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button onclick="toggleDropdown()" class="dropbtn">Baixe Agora</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="../download.html">Versão gratuita</a>
+                                <a href="../pgProntos.html">Programas prontos</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="../pgProntos.html" class="nav-link">Loja</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Knob Tecnologia</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../css/imagens/icons/menu-abertoPreto.png" alt="Menu"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../index.html#beneficios" class="nav-link">Benefícios</a></li>
+                <li class="nav-item"><a href="../index.html#como-funciona" class="nav-link">Como funciona</a></li>
+                <li class="nav-item"><a href="../index.html#download" class="nav-link">Download</a></li>
+                <li class="nav-item"><a href="../index.html#faq" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a href="../blog/blog.html" class="nav-link">Blog</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== HERO DO BLOG ===== -->
+        <section class="blog-hero">
+            <div class="blog-hero-content">
+                <h1>Blog PowerPro</h1>
+                <p>Dicas, tutoriais e novidades sobre criação de aplicativos sem código.</p>
+                <div class="blog-hero-search">
+                    <input type="text" placeholder="Buscar artigos..." aria-label="Buscar no blog">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GRADE DE POSTS ===== -->
+        <section class="blog-grid-section">
+            <div class="container">
+                <div class="blog-grid">
+                    <!-- Post 1 -->
+                    <article class="blog-post reveal">
+                        <a href="#" class="blog-post-link">
+                            <img src="../css/imagens/criacao.png" alt="Como criar seu primeiro app">
+                            <div class="blog-post-body">
+                                <span class="blog-tag">Tutorial</span>
+                                <h3>Como criar seu primeiro app com PowerPro em 5 minutos</h3>
+                                <p class="blog-post-excerpt">Aprenda os comandos básicos e veja seu sistema funcionando.</p>
+                                <div class="blog-post-meta">
+                                    <span><i class="far fa-calendar-alt"></i> 15/03/2025</span>
+                                    <span><i class="far fa-clock"></i> 5 min</span>
+                                </div>
+                                <span class="blog-read-more"><a class="blog-read-more" href="criar-primeiro-app.html">Leia mais</a> →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Post 2 -->
+                    <article class="blog-post reveal">
+                        <a href="#" class="blog-post-link">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=350&fit=crop&crop=center" alt="10 cases de sucesso">
+                            <div class="blog-post-body">
+                                <span class="blog-tag">Cases</span>
+                                <h3>10 cases de sucesso com PowerPro em diferentes setores</h3>
+                                <p class="blog-post-excerpt">Veja como empresas estão usando a ferramenta para inovar.</p>
+                                <div class="blog-post-meta">
+                                    <span><i class="far fa-calendar-alt"></i> 10/03/2025</span>
+                                    <span><i class="far fa-clock"></i> 8 min</span>
+                                </div>
+                                <span class="blog-read-more">Leia mais →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Post 3 -->
+                    <article class="blog-post reveal">
+                        <a href="#" class="blog-post-link">
+                            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=350&fit=crop&crop=center" alt="PowerPro vs. Low-Code">
+                            <div class="blog-post-body">
+                                <span class="blog-tag">Análise</span>
+                                <h3>PowerPro vs. Low-Code: qual escolher para sua empresa?</h3>
+                                <p class="blog-post-excerpt">Entenda as diferenças e veja qual se adapta melhor ao seu negócio.</p>
+                                <div class="blog-post-meta">
+                                    <span><i class="far fa-calendar-alt"></i> 05/03/2025</span>
+                                    <span><i class="far fa-clock"></i> 6 min</span>
+                                </div>
+                                <span class="blog-read-more">Leia mais →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Post 4 -->
+                    <article class="blog-post reveal">
+                        <a href="#" class="blog-post-link">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=350&fit=crop&crop=center" alt="5 dicas para otimizar seus aplicativos">
+                            <div class="blog-post-body">
+                                <span class="blog-tag">Dicas</span>
+                                <h3>5 dicas para otimizar a performance dos seus apps</h3>
+                                <p class="blog-post-excerpt">Melhore a velocidade e experiência dos seus aplicativos PowerPro.</p>
+                                <div class="blog-post-meta">
+                                    <span><i class="far fa-calendar-alt"></i> 28/02/2025</span>
+                                    <span><i class="far fa-clock"></i> 4 min</span>
+                                </div>
+                                <span class="blog-read-more">Leia mais →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Post 5 -->
+                    <article class="blog-post reveal">
+                        <a href="#" class="blog-post-link">
+                            <img src="https://images.unsplash.com/photo-1552581234-26160f608093?w=600&h=350&fit=crop&crop=center" alt="Integração com outras ferramentas">
+                            <div class="blog-post-body">
+                                <span class="blog-tag">Integração</span>
+                                <h3>Como integrar PowerPro com APIs e outras ferramentas</h3>
+                                <p class="blog-post-excerpt">Expanda as funcionalidades do PowerPro conectando com serviços externos.</p>
+                                <div class="blog-post-meta">
+                                    <span><i class="far fa-calendar-alt"></i> 20/02/2025</span>
+                                    <span><i class="far fa-clock"></i> 7 min</span>
+                                </div>
+                                <span class="blog-read-more">Leia mais →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Post 6 -->
+                    <article class="blog-post reveal">
+                        <a href="#" class="blog-post-link">
+                            <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=600&h=350&fit=crop&crop=center" alt="Depoimentos de usuários">
+                            <div class="blog-post-body">
+                                <span class="blog-tag">Depoimentos</span>
+                                <h3>O que os usuários falam sobre o PowerPro</h3>
+                                <p class="blog-post-excerpt">Histórias reais de quem transformou sua gestão com a ferramenta.</p>
+                                <div class="blog-post-meta">
+                                    <span><i class="far fa-calendar-alt"></i> 15/02/2025</span>
+                                    <span><i class="far fa-clock"></i> 5 min</span>
+                                </div>
+                                <span class="blog-read-more">Leia mais →</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- ===== PAGINAÇÃO ===== -->
+                <div class="blog-pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">Próximo →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== NEWSLETTER ===== -->
+        <section class="blog-newsletter">
+            <div class="container newsletter-container">
+                <h2>Receba novidades no seu e-mail</h2>
+                <p>Inscreva-se e fique por dentro de novos artigos e atualizações do PowerPro.</p>
+                <form action="#" method="post" class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit">Inscrever</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="conteudo-footer">
+            <div class="conteudo-footer-navegacao">
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="index.html#home">Início</a></li>
+                    <li><a href="index.html#download">Download</a></li>
+                    <li><a href="index.html#galeria">Programas prontos</a></li>
+                    <li><a href="blog.html">Blog PowerPro</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="conteudo-footer-navegacao">
+                <h2>Produtos</h2>
+                <ul>
+                    <li><a href="#">PowerPro</a></li>
+                    <li><a href="#">Knob Solar</a></li>
+                    <li><a href="#">Livro DOOP</a></li>
+                    <li><a href="conversorDBF/index.html">Conversor DBF</a></li>
+                </ul>
+            </div>
+            <div class="conteudo-footer-navegacao">
+                <h2>Contato</h2>
+                <h3>São Miguel Arcanjo</h3>
+                <p class="conteudo-footer-navegacao-p">Av. Marginal do Pacinho, 1007<br>CEP: 18.230-000</p>
+                <div class="conteudo-footer-navegacao-contato">
+                    <div class="conteudo-footer-navegacao-contato-img">
+                        <img src="../css/imagens/icons/telefone-circular 1.svg" alt="Telefone">
+                        <a href="tel:+55 15 981458518">+55 (15) 981458518</a>
+                    </div>
+                    <div class="conteudo-footer-navegacao-contato-img">
+                        <img src="../css/imagens/icons/envelope-circular 1.svg" alt="Email">
+                        <a href="mailto:knobtecnologia.com.br">knobtecnologia.com.br</a>
+                    </div>
+                </div>
+            </div>
+            <div class="conteudo-footer-navegacao-contribua">
+                <h2>Contribua</h2>
+                <p class="conteudo-footer-navegacao-contribua-p">
+                    Faça parte da inovação! Ajude o<br>PowerPro a crescer e evoluir. Sua contribuição é fundamental para<br>manter a plataforma gratuita.
+                </p>
+                <a href="../contribua.html" class="conteudo-footer-navegacao-contribua-a">Contribuir</a>
+            </div>
+        </div>
+        <hr class="divisao-footer">
+        <div class="conteudo-footer-pt2">
+            <p>&copy;2025 Knob Tecnologia - Alguns direitos reservados<br>CNPJ: 71.565.949/0001-87<br>Desenvolvido com ❤️ e ☕ por <a href="https://okaiquelopes.github.io/portfolio" target="_blank">Lopes Tecnologia.</a></p>
+            <img src="../css/imagens/LOGO KNOB NO BG.png" alt="Knob Tecnologia">
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

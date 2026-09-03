@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas Prontos PowerPro | Knob Tecnologia</title>
+    <link rel="stylesheet" href="css/pgProntos.css">
+    <link rel="shortcut icon" href="css/imagens/icons/logoTipoLaranja.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Voltar</a></li>
+                    <li class="nav-item"><a href="download.html" target="_blank" class="nav-link">Download gratuito</a></li>
+                </ul>
+            </div>
+            <div class="logo-header">
+                <img src="css/imagens/logoPowerPro1White.png" alt="PowerPro">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="css/imagens/icons/menu-abertoPreto.png" alt="Menu"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#powerpro">FAQ</a></li>
+            </ul>    
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="title-home">
+                <h1>Explore nossa galeria de programas e escolha<br>o que mais se adapta a sua necessidade!</h1>
+            </div>
+            <div class="featured-section">
+                <div class="featured-header">
+                    <h2>Em destaque</h2>
+                    <div class="nav-buttons" aria-hidden="false">
+                        <button id="btnPrev" aria-label="Anterior">❮</button>
+                        <button id="btnNext" aria-label="Próximo">❯</button>
+                    </div>
+                </div>
+                <div class="carousel-wrapper" id="carouselWrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Card 1 -->
+                        <div class="card" data-id="1">
+                            <img src="css/imagens/programas/financas.png" alt="Orçamentos">
+                            <div class="card-content">
+                                <div class="card-title">Finanças</div>
+                                <div class="sold-info">10 vendidos</div>
+                                <a href="produto.html?id=1" class="btn-saiba-mais">Saiba Mais</a>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="card" data-id="2">
+                            <img src="css/imagens/programas/vendas.png" alt="Controle de Estoque">
+                            <div class="card-content">
+                                <div class="card-title">Vendas</div>
+                                <div class="sold-info">3 vendidos</div>
+                                <a href="produto.html?id=2" class="btn-saiba-mais">Saiba Mais</a>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="card" data-id="3">
+                            <img src="css/imagens/programas/jurus.png" alt="Financeiro Básico">
+                            <div class="card-content">
+                                <div class="card-title">Juros Compostos</div>
+                                <div class="sold-info">18 vendidos</div>
+                                <a href="produto.html?id=3" class="btn-saiba-mais">Saiba Mais</a>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="card" data-id="4">
+                            <img src="css/imagens/programas/slids.png" alt="Cadastro de Clientes">
+                            <div class="card-content">
+                                <div class="card-title">Apresentação de Slids</div>
+                                <div class="sold-info">45 vendidos</div>
+                                <a href="produto.html?id=4" class="btn-saiba-mais">Saiba Mais</a>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="card" data-id="5">
+                            <img src="css/imagens/programas/medicos.png" alt="Escolar/Curso Simples">
+                            <div class="card-content">
+                                <div class="card-title">Médicos</div>
+                                <div class="sold-info">6 vendidos</div>
+                                <a href="produto.html?id=5" class="btn-saiba-mais">Saiba Mais</a>
+                            </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="card" data-id="6">
+                            <img src="css/imagens/programas/cooper.png" alt="Locação">
+                            <div class="card-content">
+                                <div class="card-title">Cooperativas</div>
+                                <div class="sold-info">1 vendidos</div>
+                                <a href="produto.html?id=6" class="btn-saiba-mais">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="pg_script.js"></script>
+    <script>
+        function menuShow() {
+            let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "css/imagens/icons/menu-abertoPreto.png";
+            } else {
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "css/imagens/icons/botao-fecharPreto.png";
+            }
+        }
+    </script>
+</body>
+</html>

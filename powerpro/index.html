@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPro | Crie aplicativos sem códigos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="css/imagens/icons/logoTipoLaranja.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo-header">
+                <img src="css/imagens/logoPowerPro2L.png" alt="PowerPro">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button onclick="toggleDropdown()" class="dropbtn">Baixe Agora</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="download.html">Versão gratuita</a>
+                                <a href="pgProntos.html">Programas prontos</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="pgProntos.html" class="nav-link">Loja</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Knob Tecnologia</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="css/imagens/icons/menu-abertoPreto.png" alt="Menu"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                <li class="nav-item"><a href="#como-funciona" class="nav-link">Como funciona</a></li>
+                <li class="nav-item"><a href="#download" class="nav-link">Download</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== HERO ===== -->
+        <section id="home">
+            <div class="hero-container">
+                <div class="textos-home">
+                    <span class="hero-badge">🚀 Lançamento gratuito</span>
+                    <h1 id="home-title"></h1>
+                    <p class="hero-sub">
+                        Após 40 anos desenvolvendo e testando aplicativos sem códigos, estamos empolgados em oferecer uma versão gratuita para download. Ideal para gestores, empreendedores e equipes que precisam de agilidade.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="download.html" class="btn-home">Baixar Agora</a>
+                        <a href="#crie-tela" class="btn-hero-secondary">Ver demonstração</a>
+                    </div>
+                    <div class="hero-stats">
+                        <span><i class="fas fa-check-circle"></i> +200 empresas</span>
+                        <span><i class="fas fa-clock"></i> 40 anos de evolução</span>
+                        <span><i class="fas fa-database"></i> Banco integrado</span>
+                    </div>
+                </div>
+                <div class="hero-image" id="heroImage">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-image-tilt" id="heroImageTilt">
+                        <img src="css/imagens/tela-powerpro.png" alt="PowerPro Interface">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BENEFÍCIOS (4 cards) ===== -->
+        <section id="beneficios" class="section-benefits">
+            <div class="container">
+                <h2>Por que PowerPro?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item reveal">
+                        <div class="benefit-icon"><i class="fas fa-code"></i></div>
+                        <h3>Sem código, sem complicação</h3>
+                        <p>Crie telas com comandos simples como <strong>&</strong> (texto), <strong>_</strong> (número) e <strong>#</strong> (data).</p>
+                    </div>
+                    <div class="benefit-item reveal">
+                        <div class="benefit-icon"><i class="fas fa-database"></i></div>
+                        <h3>Banco de dados integrado</h3>
+                        <p>Gerencie seus dados sem servidor externo. Pronto para uso com segurança.</p>
+                    </div>
+                    <div class="benefit-item reveal">
+                        <div class="benefit-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h3>Relatórios dinâmicos</h3>
+                        <p>Visualize informações com gráficos, filtros e relatórios personalizados.</p>
+                    </div>
+                    <div class="benefit-item reveal">
+                        <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Segurança e controle</h3>
+                        <p>Controle de usuários, permissões e auditoria nativos. Dados protegidos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== COMO FUNCIONA (TIMELINE) ===== -->
+        <section id="como-funciona" class="section-how-new">
+            <div class="container">
+                <h2>Como funciona?</h2>
+                <p class="how-sub">Crie seu primeiro aplicativo em poucos minutos</p>
+                <div class="how-timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker">1</div>
+                        <div class="timeline-card">
+                            <i class="fas fa-download timeline-icon"></i>
+                            <h3>Baixe e instale</h3>
+                            <p>Faça o download gratuito e instale o PowerPro no seu Windows.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker">2</div>
+                        <div class="timeline-card">
+                            <i class="fas fa-pencil-alt timeline-icon"></i>
+                            <h3>Descreva sua tela</h3>
+                            <p>Use comandos simples para definir campos de texto, números e datas.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker">3</div>
+                        <div class="timeline-card">
+                            <i class="fas fa-magic timeline-icon"></i>
+                            <h3>O PowerPro gera o sistema</h3>
+                            <p>Automaticamente, o PowerPro cria a interface e o banco de dados.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker">4</div>
+                        <div class="timeline-card">
+                            <i class="fas fa-share-alt timeline-icon"></i>
+                            <h3>Execute e compartilhe</h3>
+                            <p>Seu aplicativo está pronto. Compartilhe com sua equipe ou clientes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== COMPARATIVO ===== -->
+        <section id="comparativo" class="section-compare">
+            <div class="container">
+                <h2>PowerPro vs. outras ferramentas</h2>
+                <div class="compare-table-wrapper">
+                    <table class="compare-table">
+                        <thead>
+                            <tr>
+                                <th>Funcionalidade</th>
+                                <th>PowerPro</th>
+                                <th>Excel</th>
+                                <th>ERPs caros</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Criação sem código</td>
+                                <td><i class="fas fa-check-circle" style="color:#D88345;"></i></td>
+                                <td><i class="fas fa-times-circle" style="color:#ccc;"></i></td>
+                                <td><i class="fas fa-minus-circle" style="color:#f0ad4e;"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Banco de dados integrado</td>
+                                <td><i class="fas fa-check-circle" style="color:#D88345;"></i></td>
+                                <td><i class="fas fa-times-circle" style="color:#ccc;"></i></td>
+                                <td><i class="fas fa-check-circle" style="color:#D88345;"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Custo zero (versão gratuita)</td>
+                                <td><i class="fas fa-check-circle" style="color:#D88345;"></i></td>
+                                <td><i class="fas fa-minus-circle" style="color:#f0ad4e;"></i></td>
+                                <td><i class="fas fa-times-circle" style="color:#ccc;"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Personalização total</td>
+                                <td><i class="fas fa-check-circle" style="color:#D88345;"></i></td>
+                                <td><i class="fas fa-minus-circle" style="color:#f0ad4e;"></i></td>
+                                <td><i class="fas fa-minus-circle" style="color:#f0ad4e;"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Relatórios e gráficos</td>
+                                <td><i class="fas fa-check-circle" style="color:#D88345;"></i></td>
+                                <td><i class="fas fa-check-circle" style="color:#D88345;"></i></td>
+                                <td><i class="fas fa-check-circle" style="color:#D88345;"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="compare-footnote">* PowerPro oferece uma versão gratuita com recursos essenciais. Planos pagos para necessidades avançadas.</p>
+            </div>
+        </section>
+
+        <!-- ===== CRIE TELA ===== -->
+        <section id="crie-tela" class="crie-tela">
+            <div class="form-area">
+                <h1>Experimente: crie uma tela no estilo PowerPro</h1>
+                <p>Com o PowerPro você cria sistemas digitando comandos simples e intuitivos. Olha só:</p>
+                <p>Use <strong>&</strong> para campos de texto, <strong>_</strong> para campos numéricos e <strong>#</strong> para datas.</p>
+                <textarea id="inputText" rows="6" placeholder="Ex:&#10;Nome: &&&&&&&&&&&&&#10;CPF: ___________&#10;Data Nasc: ##/##/####"></textarea>
+                <button class="button-form-area" onclick="gerarCampos()">Gerar Campos</button>
+            </div>
+            <div id="resultado" class="resultado"></div>
+        </section>
+
+        <!-- ===== SOCIAL PROOF ===== -->
+        <section id="social-proof" class="section-social-proof">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-header">
+                        <img class="testimonial-photo" src="css/imagens/dep.1.png" alt="Carlos Silva">
+                        <div>
+                            <p class="testimonial-author">Carlos Silva</p>
+                            <p class="testimonial-role">Gestor de TI</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">“Com o PowerPro digitalizamos toda a nossa gestão em 3 dias. Economizamos 20h semanais.”</p>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-header">
+                        <img class="testimonial-photo" src="css/imagens/logoTipoLaranja.png" alt="Knob Tecnologia">
+                        <div>
+                            <p class="testimonial-author">Relatório Knob Tecnologia</p>
+                            <p class="testimonial-role">Equipe Técnica</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">“Mais de 200 empresas já criaram sistemas com o PowerPro. A redução de erros foi de 30%.”</p>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-header">
+                        <img class="testimonial-photo" src="css/imagens/dep.2.jpeg" alt="Ana Beatriz">
+                        <div>
+                            <p class="testimonial-author">Ana Beatriz</p>
+                            <p class="testimonial-role">Líder de Inovação</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">“Criamos 50+ apps sem escrever uma linha de código. O time ficou livre para inovar.”</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GALERIA / APLICATIVOS PRONTOS ===== -->
+        <section id="galeria">
+            <div class="galeria-content">
+                <div class="galeria-textos">
+                    <span class="galeria-tag">Loja PowerPro</span>
+                    <h1>Aplicativos prontos para acelerar seus projetos</h1>
+                    <p class="desc-galeria">
+                        Explore nossa coleção de <b>aplicativos prontos</b> para uso no PowerPro. Economize tempo com soluções eficientes, feitas para acelerar seus projetos. Estamos constantemente adicionando <b>novos aplicativos à loja</b>, garantindo sempre mais opções para você experimentar e expandir suas soluções.
+                    </p>
+                    <a href="pgProntos.html" class="btn-galeria">Conhecer</a>
+                </div>
+                <div class="galeria-imagem">
+                    <img src="css/imagens/pgProntos-Img.png" alt="Programas prontos">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BLOG DESTAQUE ===== -->
+        <section id="blog-destaque" class="section-blog">
+            <div class="container">
+                <h2>Dicas e novidades no Blog</h2>
+                <div class="blog-grid">
+                    <article class="blog-card reveal">
+                        <img src="css/imagens/criacao.png" alt="Como criar seu primeiro app">
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Tutorial</span>
+                            <h3>Como criar seu primeiro app com PowerPro em 5 minutos</h3>
+                            <p>Aprenda os comandos básicos e veja seu sistema funcionando.</p>
+                            <a href="blog/criar-primeiro-app.html" class="blog-link">Leia mais →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&crop=center" alt="10 cases de sucesso">
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Cases</span>
+                            <h3>10 cases de sucesso com PowerPro em diferentes setores</h3>
+                            <p>Veja como empresas estão usando a ferramenta para inovar.</p>
+                            <a href="#" class="blog-link">Leia mais →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card reveal">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=250&fit=crop&crop=center" alt="PowerPro vs. Low-Code">
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Análise</span>
+                            <h3>PowerPro vs. Low-Code: qual escolher para sua empresa?</h3>
+                            <p>Entenda as diferenças e veja qual se adapta melhor ao seu negócio.</p>
+                            <a href="#" class="blog-link">Leia mais →</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="blog-cta">
+                    <a href="blog/blog.html" class="btn-blog">Visite o Blog</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAQ ===== -->
+        <section id="faq">
+            <div class="faq-header">
+                <h1>Perguntas frequentes</h1>
+                <p>Tire suas dúvidas sobre o PowerPro</p>
+            </div>
+            <ul class="benefits-list">
+                <li>
+                    <span class="benefit-title">Quais são os requisitos para usar o PowerPro?</span>
+                    <div class="benefit-details">O PowerPro é compatível com Windows 7, 8, 10 e 11. Requer apenas um computador com 1GB de RAM e 50MB de espaço em disco.</div>
+                </li>
+                <li>
+                    <span class="benefit-title">O PowerPro é gratuito?</span>
+                    <div class="benefit-details">Sim, o PowerPro está disponível para download gratuito. Você pode criar aplicativos sem custos na versão básica. Planos pagos oferecem recursos avançados.</div>
+                </li>
+                <li>
+                    <span class="benefit-title">Posso criar aplicativos complexos com o PowerPro?</span>
+                    <div class="benefit-details">Com certeza! O PowerPro permite criar aplicativos simples ou complexos, adaptados às suas necessidades. Nossa plataforma oferece recursos avançados para lidar com projetos diversos.</div>
+                </li>
+                <li>
+                    <span class="benefit-title">Como posso adquirir os templates de programas prontos?</span>
+                    <div class="benefit-details">Nossos templates estão disponíveis para compra diretamente no site do PowerPro. Escolha entre uma variedade de modelos e adquira o que melhor se encaixa nas suas necessidades.</div>
+                </li>
+                <li>
+                    <span class="benefit-title">Posso personalizar os templates de acordo com meu projeto?</span>
+                    <div class="benefit-details">Sim, nossos templates são totalmente customizáveis. Após a compra, você pode adaptá-los com facilidade, inserindo seus próprios dados e conteúdos.</div>
+                </li>
+                <li>
+                    <span class="benefit-title">Como posso sugerir melhorias ou novos recursos para o PowerPro?</span>
+                    <div class="benefit-details">Valorizamos a opinião dos nossos usuários! Se você tiver sugestões de melhorias ou novos recursos, envie-nos suas ideias através do formulário de contato. Adoramos ouvir você!</div>
+                </li>
+            </ul>
+
+            <!-- ===== FORMULÁRIO DE CONTATO ===== -->
+            <div class="faq-contact">
+                <div class="faq-contact-text">
+                    <h2>Envie sua dúvida!</h2>
+                    <p>Nossa equipe está pronta para responder</p>
+                </div>
+                <div class="contato-faq-novo">
+                    <form action="https://formspree.io/f/mrgnjrvp" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nome">Seu nome</label>
+                                <input type="text" id="nome" name="nome" required placeholder="João Silva">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Seu E-mail</label>
+                                <input type="email" id="email" name="email" required placeholder="joao@email.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" name="assunto" required placeholder="Dúvida sobre...">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                        </div>
+                        <input type="submit" value="Enviar mensagem">
+                        <input type="hidden" name="_next" value="https://okaiquelopes.github.io/powerprofinal/agredecimento.html">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== QUEM FAZ ===== -->
+        <section id="quem-faz">
+            <h1 class="title-quem-faz">Quem faz o PowerPro?</h1>
+            <div class="container-quem-faz">
+                <div class="container-quem-faz-card reveal">
+                    <div class="container-quem-faz-card-img">
+                        <img src="css/imagens/paulo.jpg" alt="Paulo José Knob">
+                    </div>
+                    <p>Diretor - Programador</p>
+                    <h2 class="container-quem-faz-card-title">Paulo José Knob</h2>
+                    <p class="container-quem-faz-card-p">
+                        Paulo Knob é engenheiro nuclear e pós-doutor em Energia Solar Fotovoltaica. Diretor da KNOB TECNOLOGIA e consultor da Atech no Projeto LABGENE, atua no desenvolvimento de cristais de silício e wafers para painéis solares.
+                    </p>
+                    <div class="container-quem-faz-card-icons">
+                        <a href="https://www.linkedin.com/in/paulo-jos%C3%A9-knob-50137788/" target="_blank"><img src="css/imagens/icons/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="container-quem-faz-card reveal">
+                    <div class="container-quem-faz-card-img">
+                        <img src="css/imagens/daniel.jpg" alt="Daniel Knob">
+                    </div>
+                    <p>Programador - Consultor</p>
+                    <h2 class="container-quem-faz-card-title">Daniel Knob</h2>
+                    <p class="container-quem-faz-card-p">
+                        Daniel Knob é engenheiro mecânico, doutor em Engenharia de Materiais (IPEN-USP) e programador na KNOB TECNOLOGIA. Com experiência em energia solar, atua há mais de dez anos em projetos sociais e sustentáveis, promovendo fontes limpas e renováveis.
+                    </p>
+                    <div class="container-quem-faz-card-icons">
+                        <a href="https://www.linkedin.com/in/daniel-knob-55410074/" target="_blank"><img src="css/imagens/icons/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="container-quem-faz-card reveal">
+                    <div class="container-quem-faz-card-img">
+                        <img src="css/imagens/kaique.jpg" alt="Kaique Lopes">
+                    </div>
+                    <p>Desenvolvedor Web - UX/UI Designer</p>
+                    <h2 class="container-quem-faz-card-title">Kaique Lopes</h2>
+                    <p class="container-quem-faz-card-p">
+                        Kaique Lopes é desenvolvedor web, UX/UI designer e educador de tecnologia, com atuação em desenvolvimento de interfaces, sistemas e soluções digitais. Na KNOB TECNOLOGIA, atua no desenvolvimento e suporte técnico de sistemas e aplicações.
+                    </p>
+                    <div class="container-quem-faz-card-icons">
+                        <a href="https://www.linkedin.com/in/okaiquelopes/" target="_blank"><img src="css/imagens/icons/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DOWNLOAD (CTA FINAL) ===== -->
+        <section id="download" class="section-final-cta">
+            <div class="cta-final-icon" aria-hidden="true"><i class="fas fa-rocket"></i></div>
+            <div class="textos-download">
+                <h1>Comece<br>seu aplicativo<br>gratuitamente</h1>
+                <p class="desc-download">Crie e personalize seu aplicativo <b>agora mesmo</b>. Evolua à medida que suas necessidades crescem — do básico ao completo, <b>sem precisar programar</b>.</p>
+                <a href="download.html" class="btn-download" target="_blank">Download</a>
+                <div class="download-highlight">
+                    <i class="fas fa-gift"></i> Grátis para sempre na versão básica
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="conteudo-footer">
+            <div class="conteudo-footer-navegacao">
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#galeria">Programas prontos</a></li>
+                    <li><a href="blog-powerpro/index.html">Blog PowerPro</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="conteudo-footer-navegacao">
+                <h2>Produtos</h2>
+                <ul>
+                    <li><a href="#">PowerPro</a></li>
+                    <li><a href="#">Knob Solar</a></li>
+                    <li><a href="#">Livro DOOP</a></li>
+                    <li><a href="conversorDBF/index.html">Conversor DBF</a></li>
+                </ul>
+            </div>
+            <div class="conteudo-footer-navegacao">
+                <h2>Contato</h2>
+                <h3>São Miguel Arcanjo</h3>
+                <p class="conteudo-footer-navegacao-p">Av. Marginal do Pacinho, 1007<br>CEP: 18.230-000</p>
+                <div class="conteudo-footer-navegacao-contato">
+                    <div class="conteudo-footer-navegacao-contato-img">
+                        <img src="css/imagens/icons/telefone-circular 1.svg" alt="Telefone">
+                        <a href="tel:+55 15 981458518">+55 (15) 981458518</a>
+                    </div>
+                    <div class="conteudo-footer-navegacao-contato-img">
+                        <img src="css/imagens/icons/envelope-circular 1.svg" alt="Email">
+                        <a href="mailto:atendimento.knob@gmail.com">atendimento.knob@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="conteudo-footer-navegacao-contribua">
+                <h2>Contribua</h2>
+                <p class="conteudo-footer-navegacao-contribua-p">
+                    Faça parte da inovação! Ajude o<br>PowerPro a crescer e evoluir. Sua contribuição é fundamental para<br>manter a plataforma gratuita.
+                </p>
+                <a href="contribua.html" class="conteudo-footer-navegacao-contribua-a">Contribuir</a>
+            </div>
+        </div>
+        <hr class="divisao-footer">
+        <div class="conteudo-footer-pt2">
+            <p>&copy;2026 Knob Tecnologia - Alguns direitos reservados<br>CNPJ: 71.565.949/0001-87<br>Desenvolvido com ❤️ e ☕ por <a href="https://okaiquelopes.vercel.app" target="_blank">Lopes Tecnologia.</a></p>
+            <img src="css/imagens/LOGO KNOB NO BG.png" alt="Knob Tecnologia">
+        </div>
+    </footer>
+
+    <!-- ===== CARREGA O SCRIPT ÚNICO ===== -->
+    <script src="script.js"></script>
+</body>
+</html>

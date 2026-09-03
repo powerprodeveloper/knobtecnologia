@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knob Tecnologia</title>
+  <link rel="shortcut icon" href="./powerpro/css/imagens/icons/logoTipoLaranja.ico" type="image/x-icon">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #111;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .logo-hader {
+      height: 50px;
+    }
+
+    .nav-list ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .swiper-slide {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.55);
+      z-index: 1;
+    }
+
+    .slide-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .slide-content h1, .slide-content h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .slide-content p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: 700;
+      background: #1a5ad9;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1545a5;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #fff;
+    }
+
+    /* afastando um pouco da borda */
+    .swiper-button-next { right: 30px; }
+    .swiper-button-prev { left: 30px; }
+
+    .swiper-pagination-bullet {
+      background: #fff;
+      opacity: 0.7;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #1a5ad9;
+      opacity: 1;
+    }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    background-color: #1E1E1E;
+}
+.divisao-footer {
+    display: flex;
+    width: 90%;
+    border: 1px solid #F7FCFE;
+}
+.conteudo-footer-pt2 {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-height: auto;
+    margin-top: 1%;
+}
+
+.conteudo-footer-pt2 p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 19px;
+    color: #F7FCFE;
+}
+.conteudo-footer-pt2 a{
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.7rem;
+    line-height: 19px;
+    color: #F7FCFE;
+    
+    
+}
+.conteudo-footer-pt2 img {
+    display: flex;
+    height: 50px;
+    margin-left: 70%;
+}
+
+    /* Ajustes para mobile */
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+
+  .nav-list {
+    display: none; /* esconde os links */
+  }
+  /* Remove botões de navegação no mobile */
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+  footer {
+        padding: 1.5rem 0;
+        text-align: center;
+        height: 200px;
+    }
+
+    .conteudo-footer {
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    .conteudo-footer-navegacao,
+    .conteudo-footer-navegacao-contribua {
+        display: none;
+    }
+
+    .conteudo-footer-navegacao h2,
+    .conteudo-footer-navegacao-contribua h2 {
+        font-size: 1.2rem;
+    }
+
+    .conteudo-footer-navegacao a {
+        font-size: 0.9rem;
+    }
+
+    .conteudo-footer-navegacao h3 {
+        font-size: 1rem;
+    }
+
+    .conteudo-footer-navegacao-p {
+        font-size: 0.8rem;
+    }
+
+    .conteudo-footer-navegacao-contato-img img {
+        height: 18px;
+    }
+
+    .conteudo-footer-navegacao-contato-img a {
+        font-size: 0.8rem;
+    }
+
+    .conteudo-footer-navegacao-contribua-p {
+        font-size: 0.9rem;
+    }
+
+    .conteudo-footer-navegacao-contribua-a {
+        width: 60%;
+        font-size: 0.9rem;
+    }
+
+    .divisao-footer {
+        width: 90%;
+        margin-top: 1.5rem;
+    }
+
+    .conteudo-footer-pt2 {
+        flex-direction: column;
+        width: 90%;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    .conteudo-footer-pt2 p {
+        font-size: 0.75rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .conteudo-footer-pt2 img {
+        margin: 0 auto;
+        height: 60px;
+        width: 100px;
+    }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="css/imgs/logo_kntecNoBgWhite.svg" alt="" class="logo-hader">
+    <div class="nav-list">
+      <ul>
+        <li><a href="./powerpro/index.html" class="nav-link" target="_blank">PowerPro</a></li>
+        <li><a href="./solar/index.html" class="nav-link" target="_blank">Knob Solar</a></li>
+        <li><a href="./powerpro/pgProntos.html" class="nav-link">Loja</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Swiper -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');">
+        <div class="overlay"></div>
+        <div class="slide-content">
+          <h1>Bem-vindo à Knob Tecnologia</h1>
+          <p>Desde 1984 atuando na fronteira da inovação, desenvolvendo soluções energéticas e em tecnologia da informação.</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide" style="background-image:url('css/imgs/power.jpeg');">
+        <div class="overlay"></div>
+        <div class="slide-content">
+          <h2>PowerPro</h2>
+          <p>Aplicativos de gerenciamento de banco de dados, criados sem programação, com foco em autonomia e eficiência.</p>
+          <a href="./powerpro/index.html" class="btn" target="_blank">Acessar Agora</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide" style="background-image:url('css/imgs/solar.jpeg');">
+        <div class="overlay"></div>
+        <div class="slide-content">
+          <h2>Knob Solar</h2>
+          <p>Soluções em sistemas fotovoltaicos para residências, empresas e áreas rurais.
+          Mais de 20 anos de experiência em energia solar, com credibilidade e excelência técnica.</p>
+          <a href="./solar/index.html" class="btn" target="_blank">Acessar Agora</a>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide" style="background-image:url('css/imgs/nuclear.jpg');">
+        <div class="overlay"></div>
+        <div class="slide-content">
+          <h2>Nuclear</h2>
+          <p>Trazendo confiabilidade às tecnologias da área núclear desde a década de 80.</p>
+          <a href="./nuclear/index.html" class="btn" target="_blank">Acessar Agora</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 6500, // mais lento que antes
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+<footer>
+        <hr class="divisao-footer">
+        <div class="conteudo-footer-pt2">
+            <p>&copy;2025 Knob Tecnologia - Alguns direitos reservados<br>CNPJ: 71.565.949/0001-87<br>Desenvolvido com ❤️ e ☕ por <a href="https://okaiquelopes.github.io/portfolio" target="_blank" rel="noopener noreferrer">Lopes Tecnologia.</a></p>
+            <img src="css/imgs/LOGO KNOB NO BG.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>

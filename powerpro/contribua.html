@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribua | PowerPro</title>
+    <link rel="stylesheet" href="css/contribua.css">
+    <link rel="shortcut icon" href="css/imagens/icons/logoTipoLaranja.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Voltar</a></li>
+                </ul>
+            </div>
+            <div class="logo-header">
+                <img src="css/imagens/logoPowerPro1.png" alt="">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="css/imagens/icons/menu-abertoPreto.png" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#powerpro" class="nav-link">FAQ</a></li>
+            </ul>    
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="textos">
+                <h1 id="contribua-title"></h1>
+                <p>Faça parte da inovação! Ajude o PowerPro a crescer e evoluir. Sua contribuição é fundamental para manter a plataforma gratuita, implementar novos recursos e proporcionar uma experiência ainda melhor. Faça sua doação agora e colabore conosco na construção de algo incrível juntos!</p>
+            </div>
+            <div class="payment-container">
+                <h2 class="title-pix">Contribuição via Pix</h2>
+                <img src="css/imagens/QR-pix.png" alt="Código QR para PIX">
+                <p class="desc-pix-1">Escanee o QR Code e contribua com um café para o programador. Sua doação é crucial para a evolução do PowerPro! ☕</p>
+                <p class="p-ou">OU</p>
+                <p class="desc-pix-1">Copie a chave PIX:</p>
+                <p class="chave-pix">Chave PIX: <span class="pix-key">588.215.128-78</span></p>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        const text = "Por que contribuir com o PowerPro?";
+        const textElement = document.getElementById("contribua-title");
+
+
+        let index = 0;
+
+        function type() {
+        if (index < text.length) {
+            textElement.textContent += text[index];
+            index++;
+        } else {
+            textElement.innerHTML += '<span id="blinking-cursor">|</span>';
+            clearInterval(typingInterval);
+            setInterval(blinkCursor, 500);
+        }
+        }
+
+        function blinkCursor() {
+        const cursor = document.getElementById("blinking-cursor");
+        cursor.style.visibility = (cursor.style.visibility === 'hidden') ? 'visible' : 'hidden';
+        }
+
+        const typingInterval = setInterval(type, 90);
+    </script>
+</body>
+</html>

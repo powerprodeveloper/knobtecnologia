@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Inter', sans-serif;
+  background:#F8FAFC;
+  color:#0F172A;
+  line-height:1.6;
+}
+
+header {
+  background:#D88345;
+  padding:20px 20px;
+  box-shadow:0 2px 12px rgba(0,0,0,0.06);
+}
+.nav-bar {
+  max-width:1280px;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo-header img { height:25px; width:auto; }
+.nav-list ul {
+  display:flex;
+  gap:2rem;
+  list-style:none;
+}
+.nav-list a {
+  color:#fff;
+  text-decoration:none;
+  font-weight:500;
+  transition:opacity 0.2s;
+  font-size:0.95rem;
+}
+.nav-list a:hover { opacity:0.8; }
+
+#detalhes {
+  padding:3rem 2rem;
+  max-width:1280px;
+  margin:0 auto;
+}
+.container-detalhes {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:3rem;
+  background:#fff;
+  padding:2.5rem;
+  border-radius:20px;
+  box-shadow:0 8px 40px rgba(0,0,0,0.05);
+}
+.produto-imagem {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.produto-imagem img {
+  max-width:100%;
+  border-radius:16px;
+  box-shadow:0 4px 20px rgba(0,0,0,0.06);
+}
+.produto-info {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.produto-info h1 {
+  font-family:'Space Grotesk',sans-serif;
+  font-size:2.2rem;
+  font-weight:700;
+  color:#0F172A;
+  margin-bottom:0.5rem;
+}
+.produto-info p {
+  font-size:1rem;
+  line-height:1.7;
+  color:#334155;
+  margin-bottom:1.5rem;
+}
+.produto-preco {
+  font-size:1.8rem;
+  font-weight:700;
+  color:#D88345;
+  margin-bottom:2rem;
+}
+.btn-comprar {
+  display:inline-block;
+  background:#25D366;
+  color:#fff;
+  padding:0.8rem 2.5rem;
+  border-radius:50px;
+  font-weight:600;
+  text-decoration:none;
+  transition:all 0.25s;
+  width:fit-content;
+  box-shadow:0 4px 14px rgba(37,211,102,0.3);
+}
+.btn-comprar:hover {
+  transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(37,211,102,0.4);
+}
+
+@media (max-width: 768px) {
+  header { padding:0.5rem 1rem; }
+  .nav-list ul { gap:1rem; }
+  .nav-list a { font-size:0.85rem; }
+  .container-detalhes {
+    grid-template-columns:1fr;
+    padding:1.5rem;
+    gap:1.5rem;
+  }
+  .produto-info h1 { font-size:1.8rem; }
+  .produto-preco { font-size:1.5rem; }
+  .btn-comprar { width:100%; text-align:center; }
+}
