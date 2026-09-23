@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Estilos Globais - Estes estilos se aplicam a todas as telas, mas são a base para o desktop */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("img/bg_placa10.png");
+    background-repeat: no-repeat;   /* não repete a imagem */
+    background-size: cover;        /* faz cobrir toda a tela */
+    background-position: center;   /* centraliza a imagem */
+    height: 100vh;                 /* garante altura mínima de tela */
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Header e Navegação - Estilos Desktop (preservados) */
+header{
+    align-items: flex-end;
+    padding: 20px;
+    max-width: auto;
+    max-height: auto;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: auto;
+    max-width: auto;
+    margin-left: 3%;
+}
+
+.logo-header img {
+    height: 30px;
+    width: 100%;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 60%;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.nav-link {
+    color: #fff;
+    font-family: 'Kantumruy Pro';
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+#home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.conteudo_home{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10%;
+    flex-direction: column;
+    max-height: auto;
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.titulo-principal{
+    color: #fff;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+.titulo-principal span{
+    color: #DADC8B;
+}
+.subtitulo-principal{
+    color: #fff;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-top: 3%;
+    width: 70%;
+}
+.btn-saiba-mais-home{
+    margin-top: 3%;
+    text-decoration: none;
+    background-color: #DADC8B;
+    color: #000;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0.8rem 3.5rem;
+    border-radius: 25px;
+}
+.btn-saiba-mais-home:hover{
+    background-color: #fdff9f;
+    color: #000;
+    transition: 0.3s;
+    scale: 1.01;
+}
+.info-cards {
+  max-height: 20vh;
+    user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  padding: 10px 20px;
+  border-right: 1px solid rgba(0,0,0,0.08); /* linha quase invisível */
+  text-align: left;
+}
+
+.card:last-child {
+  border-right: none;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+.quem-somos {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+}
+
+.quem-somos .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.quem-somos-texto {
+  flex: 1;
+}
+
+.quem-somos-texto h2 {
+  font-size: 2.3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.quem-somos-texto p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.quem-somos-texto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quem-somos-texto ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.quem-somos-imagem img {
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+.como-funciona {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.como-funciona h2 {
+  font-size: 2.3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.como-funciona p {
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.step {
+  background: #f8f9fa;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step img {
+  max-width: 60px;
+  margin-bottom: 20px;
+}
+
+.step h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.step p {
+  color: #666;
+  font-size: 0.9rem;
+}
+.engenheiro {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+}
+
+.engenheiro h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.engenheiro-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.engenheiro-img img {
+  width: 480px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+}
+
+.engenheiro-text {
+  max-width: 500px;
+}
+
+.engenheiro-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.engenheiro-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+.contato {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.container-contato {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+  padding: 25px 25px;
+  border: 1px solid #555;
+  border-radius: 15px;
+}
+
+.info-contato {
+    font-family: 'Kantumruy Pro', sans-serif;
+  flex: 1;
+  min-width: 280px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.info-contato h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #5270B7;
+}
+
+.info-contato p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.parceria {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+.form-contato {
+  flex: 1;
+  min-width: 320px;
+}
+
+.form-contato h2 {
+    
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #5270B7;
+}
+
+.linha-form {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.linha-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  font-size: 1rem;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #25D366;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1ebe5b;
+  transform: translateY(-2px);
+}
+.orcamento {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.orcamento .overlay {
+    background: url('img/bg_placa4.jpg') no-repeat center center/cover;
+ 
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.orcamento h2 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.orcamento p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #25D366;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 28px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5b;
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp .icon {
+  width: 28px;
+  height: 28px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    background-color: #1E1E1E;
+}
+.divisao-footer {
+    display: flex;
+    width: 90%;
+    border: 1px solid #F7FCFE;
+}
+.conteudo-footer-pt2 {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-height: auto;
+    margin-top: 1%;
+}
+
+.conteudo-footer-pt2 p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 19px;
+    color: #F7FCFE;
+}
+.conteudo-footer-pt2 a{
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.7rem;
+    line-height: 19px;
+    color: #F7FCFE;
+    
+    
+}
+.conteudo-footer-pt2 img {
+    display: flex;
+    height: 40px;
+    margin-left: 70%;
+}
+
+
+/* Responsividade */
+@media (max-width: 900px) {
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    header{
+        display: none;
+    }
+    .conteudo_home{
+        width: 100%;
+        margin-top: 30%;
+    }
+    .btn-saiba-mais-home{
+        margin-top: 5%;
+    }
+  .info-cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-height: 50vh;
+  }
+  .card {
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    padding-bottom: 15px;
+    width: 100%;
+  }
+  .card:last-child {
+    border-bottom: none;
+  }
+  .quem-somos .container {
+    align-items: center;
+    justify-content: center;
+  }
+  .quem-somos-imagem img {
+    height: 270px;
+  }
+  #formWhatsApp input{
+    width: 100%;
+  }
+  .btn-whatsapp{
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  footer {
+        padding: 1.5rem 0;
+        text-align: center;
+        height: 200px;
+    }
+
+    .conteudo-footer {
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    .conteudo-footer-navegacao,
+    .conteudo-footer-navegacao-contribua {
+        display: none;
+    }
+
+    .conteudo-footer-navegacao h2,
+    .conteudo-footer-navegacao-contribua h2 {
+        font-size: 1.2rem;
+    }
+
+    .conteudo-footer-navegacao a {
+        font-size: 0.9rem;
+    }
+
+    .conteudo-footer-navegacao h3 {
+        font-size: 1rem;
+    }
+
+    .conteudo-footer-navegacao-p {
+        font-size: 0.8rem;
+    }
+
+    .conteudo-footer-navegacao-contato-img img {
+        height: 18px;
+    }
+
+    .conteudo-footer-navegacao-contato-img a {
+        font-size: 0.8rem;
+    }
+
+    .conteudo-footer-navegacao-contribua-p {
+        font-size: 0.9rem;
+    }
+
+    .conteudo-footer-navegacao-contribua-a {
+        width: 60%;
+        font-size: 0.9rem;
+    }
+
+    .divisao-footer {
+        width: 90%;
+        margin-top: 1.5rem;
+    }
+
+    .conteudo-footer-pt2 {
+        flex-direction: column;
+        width: 90%;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    .conteudo-footer-pt2 p {
+        font-size: 0.75rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .conteudo-footer-pt2 img {
+        margin: 0 auto;
+        height: 40px;
+        
+    }
+}
+@media (max-width: 600px) {
+    .titulo-principal{
+        font-size: 2.5rem;
+    }
+    .subtitulo-principal{
+        font-size: 0.9rem;
+        width: 90%;
+    }
+    .btn-saiba-mais-home{
+        font-size: 1rem;
+        padding: 0.8rem 2.5rem;
+    }
+    .engenheiro-img img {
+        width: 100%;
+        height: auto;
+    }
+    .engenheiro-text {
+        max-width: 100%;
+    }
+    .info-contato {
+        font-size: 0.9rem;
+    }
+    .form-contato {
+        min-width: 100%;
+    }
+    .form-contato h2 {
+        font-size: 1.3rem;
+    }
+    .linha-form input {
+        font-size: 0.9rem;
+    }
+    textarea {
+        font-size: 0.9rem;
+    }
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+    .orcamento h2 {
+        font-size: 1.8rem;
+    }
+    .orcamento p {
+        font-size: 0.9rem;
+    }
+    .btn-whatsapp {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
